@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import package.src.imgs_rc
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -63,7 +63,13 @@ class Ui_MainWindow(object):
         spacerItem3 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem3)
         self.verticalLayout_14.addWidget(self.header)
-        self.frame_211 = QtWidgets.QFrame(self.window)
+        self.stackedWidget = QtWidgets.QStackedWidget(self.window)
+        self.stackedWidget.setObjectName("stackedWidget")
+        self.page_9 = QtWidgets.QWidget()
+        self.page_9.setObjectName("page_9")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.page_9)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.frame_211 = QtWidgets.QFrame(self.page_9)
         self.frame_211.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_211.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_211.setObjectName("frame_211")
@@ -328,9 +334,8 @@ class Ui_MainWindow(object):
         self.c111.setText("")
         self.c111.setObjectName("c111")
         self.buttonGroup = QtWidgets.QButtonGroup(MainWindow)
-        self.buttonGroup.buttonClicked.connect(self.on_button_clicked)
         self.buttonGroup.setObjectName("buttonGroup")
-        self.buttonGroup.addButton(self.c111, 1)
+        self.buttonGroup.addButton(self.c111)
         self.horizontalLayout_4.addWidget(self.c111)
         self.horizontalLayout_11.addWidget(self.frame_4)
         self.frame_6 = QtWidgets.QFrame(self.frame_3)
@@ -345,7 +350,7 @@ class Ui_MainWindow(object):
         self.c112.setMaximumSize(QtCore.QSize(13, 16777215))
         self.c112.setText("")
         self.c112.setObjectName("c112")
-        self.buttonGroup.addButton(self.c112, 2)
+        self.buttonGroup.addButton(self.c112)
         self.horizontalLayout_6.addWidget(self.c112)
         self.horizontalLayout_11.addWidget(self.frame_6)
         self.frame_9 = QtWidgets.QFrame(self.frame_3)
@@ -360,7 +365,7 @@ class Ui_MainWindow(object):
         self.c113.setMaximumSize(QtCore.QSize(13, 16777215))
         self.c113.setText("")
         self.c113.setObjectName("c113")
-        self.buttonGroup.addButton(self.c113, 3)
+        self.buttonGroup.addButton(self.c113)
         self.horizontalLayout_7.addWidget(self.c113)
         self.horizontalLayout_11.addWidget(self.frame_9)
         self.frame_12 = QtWidgets.QFrame(self.frame_3)
@@ -375,7 +380,7 @@ class Ui_MainWindow(object):
         self.c114.setMaximumSize(QtCore.QSize(13, 16777215))
         self.c114.setText("")
         self.c114.setObjectName("c114")
-        self.buttonGroup.addButton(self.c114, 4)
+        self.buttonGroup.addButton(self.c114)
         self.horizontalLayout_8.addWidget(self.c114)
         self.horizontalLayout_11.addWidget(self.frame_12)
         self.frame_15 = QtWidgets.QFrame(self.frame_3)
@@ -390,7 +395,7 @@ class Ui_MainWindow(object):
         self.c115.setMaximumSize(QtCore.QSize(13, 16777215))
         self.c115.setText("")
         self.c115.setObjectName("c115")
-        self.buttonGroup.addButton(self.c115, 5)
+        self.buttonGroup.addButton(self.c115)
         self.horizontalLayout_9.addWidget(self.c115)
         self.horizontalLayout_11.addWidget(self.frame_15)
         self.frame_17 = QtWidgets.QFrame(self.frame_3)
@@ -405,7 +410,7 @@ class Ui_MainWindow(object):
         self.c116.setMaximumSize(QtCore.QSize(13, 16777215))
         self.c116.setText("")
         self.c116.setObjectName("c116")
-        self.buttonGroup.addButton(self.c116, 6)
+        self.buttonGroup.addButton(self.c116)
         self.horizontalLayout_10.addWidget(self.c116)
         self.horizontalLayout_11.addWidget(self.frame_17)
         self.horizontalLayout_2.addWidget(self.frame_3)
@@ -14859,7 +14864,12 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.addWidget(self.frame_112)
         self.scroll_body.setWidget(self.scrollAreaWidgetContents)
         self.verticalLayout_9.addWidget(self.scroll_body)
-        self.verticalLayout_14.addWidget(self.frame_211)
+        self.verticalLayout_6.addWidget(self.frame_211)
+        self.stackedWidget.addWidget(self.page_9)
+        self.page_10 = QtWidgets.QWidget()
+        self.page_10.setObjectName("page_10")
+        self.stackedWidget.addWidget(self.page_10)
+        self.verticalLayout_14.addWidget(self.stackedWidget)
         MainWindow.setCentralWidget(self.window)
 
         self.retranslateUi(MainWindow)
@@ -15448,18 +15458,4 @@ class Ui_MainWindow(object):
 "miento que involucren la evaluación de los sistemas ope-\n"
 "rativos deben planificarse y acordarse entre el evaluador\n"
 "y la gerencia correspondiente."))
-
-    def on_button_clicked(self, button):
-        button_id = self.buttonGroup.checkedId()
-        if button_id == 1:
-            print("Opción 1 seleccionada")
-        elif button_id == 2:
-            print("Opción 2 seleccionada")
-        elif button_id == 3:
-            print("Opción 3 seleccionada")
-        elif button_id == 4:
-            print("Opción 3 seleccionada")
-        elif button_id == 5:
-            print("Opción 3 seleccionada")
-        elif button_id == 6:
-            print("Opción 3 seleccionada")
+import imgs_rc
