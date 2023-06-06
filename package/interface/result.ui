@@ -1,0 +1,1763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1529</width>
+    <height>893</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border: 0px solid black;</string>
+  </property>
+  <widget class="QWidget" name="window">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>435</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="header">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+background-color: rgb(144,164,173);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="hs1">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>30</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">image: url(:/Logo_UTS/Logo_UTS.png);
+background:transparent;
+border: 0px solid black;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 75 17pt &quot;Times New Roman&quot;;
+background:transparent;
+border: 0px solid black;</string>
+         </property>
+         <property name="text">
+          <string>CONJUNTO DE ESTÁNDARES INTERNACIONALES SOBRE LA SEGURIDAD DE LA INFORMACIÓN</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">background:transparent;
+font: 75 italic 14pt &quot;Times New Roman&quot;;
+border: 0px solid black;</string>
+         </property>
+         <property name="text">
+          <string>ISO-27001</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="hs6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>30</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_13">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QScrollArea" name="scroll_body_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1507</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 0px solid black;
+</string>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1529</width>
+            <height>783</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_211">
+                <property name="minimumSize">
+                 <size>
+                  <width>745</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 0px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <property name="leftMargin">
+                  <number>73</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>73</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QScrollArea" name="scroll_body">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: 0px solid black;
+</string>
+                   </property>
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>610</width>
+                      <height>765</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>40</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_12">
+                     <item>
+                      <widget class="QFrame" name="control1">
+                       <property name="minimumSize">
+                        <size>
+                         <width>554</width>
+                         <height>63</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>63</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border: 2px solid black;
+background-color: rgb(176,191,198);
+</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_70">
+                        <property name="topMargin">
+                         <number>9</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>9</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="frame_2">
+                          <property name="styleSheet">
+                           <string notr="true">border: 0px solid black;</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout">
+                           <item>
+                            <widget class="QLabel" name="label_9">
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>Controles Organizacionales</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="items4">
+                       <property name="minimumSize">
+                        <size>
+                         <width>554</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border: 2px solid black;
+</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_6">
+                        <item>
+                         <widget class="QFrame" name="Header_4">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border: 2px solid black;
+background-color: rgb(208,215,223);</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_64">
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_89">
+                             <property name="minimumSize">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>Numeral</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_115">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_34">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>0%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_116">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_35">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>25%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_117">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_36">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>50%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_118">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_37">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>75%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_119">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_38">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>100%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_120">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_39">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>N/A</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="r1_1">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(235,239,241);</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_65">
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_124">
+                             <property name="minimumSize">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>1.1)</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_121">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_1">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_122">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_2">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_124">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_3">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_128">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="llabel1_1_4">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_129">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_5">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_132">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_6">
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_261">
+                <property name="minimumSize">
+                 <size>
+                  <width>742</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 0px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <property name="leftMargin">
+                  <number>65</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>65</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QScrollArea" name="scroll_body_2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: 0px solid black;
+</string>
+                   </property>
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>625</width>
+                      <height>765</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>40</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_13">
+                     <item>
+                      <widget class="QFrame" name="control1_3">
+                       <property name="minimumSize">
+                        <size>
+                         <width>554</width>
+                         <height>63</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>63</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border: 2px solid black;
+background-color: rgb(176,191,198);
+</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_82">
+                        <property name="topMargin">
+                         <number>9</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>9</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="frame_49">
+                          <property name="styleSheet">
+                           <string notr="true">border: 0px solid black;</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_3">
+                           <item>
+                            <widget class="QLabel" name="label_14">
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>Controles Organizacionales</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="items4_3">
+                       <property name="minimumSize">
+                        <size>
+                         <width>554</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border: 2px solid black;
+</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_10">
+                        <item>
+                         <widget class="QFrame" name="Header_6">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>52</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border: 2px solid black;
+background-color: rgb(208,215,223);</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_83">
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_129">
+                             <property name="minimumSize">
+                              <size>
+                               <width>80</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>Numeral</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_145">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_64">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>0%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_146">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_142">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>25%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_147">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_143">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>50%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_148">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_144">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>75%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_149">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_145">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>100%</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_150">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_146">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>N/A</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="r1_3">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(235,239,241);</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_84">
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_147">
+                             <property name="minimumSize">
+                              <size>
+                               <width>80</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 75 14pt &quot;Times New Roman&quot;;
+qproperty-alignment: AlignCenter;
+border: 0px solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>1.1)</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_151">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_11">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_152">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_12">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_153">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_13">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_154">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="llabel1_1_6">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_155">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_14">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="Line" name="line_156">
+                             <property name="minimumSize">
+                              <size>
+                               <width>2</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>2</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label1_1_15">
+                             <property name="styleSheet">
+                              <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+border: 0px solid black;
+}
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string>-</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../static/imgs/imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

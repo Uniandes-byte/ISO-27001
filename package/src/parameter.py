@@ -9,7 +9,7 @@ class Score(Enum):
     OPTION_6 = "N/A"
 
 class Parameter:
-    def __init__(self, section:str, index:int, title:str, description:str, score:Score):
+    def __init__(self, index:int, score:Score):
         self._index = index
         self._score = score
 
